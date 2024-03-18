@@ -130,7 +130,7 @@ module.exports = (req, res) => {
                                     User.deleteOne({ _id: userDetails });
                                     res.json({ message: "error", errors: [error2.message] });
                                 } else {
-                                    let resp = sendVerificationEmail(userDetails.email, verificationToken.token);
+                                    // let resp = sendVerificationEmail(userDetails.email, verificationToken.token);
                                     res.json({ message: "success" });
                                 }
                             }
@@ -150,7 +150,7 @@ module.exports = (req, res) => {
                                     User.deleteOne({ _id: userDetails });
                                     res.json({ message: "error", errors: [error2.message] });
                                 } else {
-                                    let resp = sendVerificationEmail(userDetails.email, verificationToken.token);
+                                    // let resp = sendVerificationEmail(userDetails.email, verificationToken.token);
                                     res.json({ message: "success" });
                                 }
                             }
